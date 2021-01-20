@@ -42,6 +42,11 @@ document.addEventListener("DOMContentLoaded", () => {
       currentImageIndex = 1;
       allBox[0].scrollIntoView({ behavior: "smooth" });
     }
+
+    //hiding left button
+    if (currentImageIndex === 1) {
+        btnLeft.setAttribute("style", "display: none");
+      }
   });
 
   btnLeft.addEventListener("click", () => {
